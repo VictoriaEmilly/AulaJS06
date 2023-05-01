@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="popcorn.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="assets/images/popcorn.png">
 	<title>Cine Flix</title>
 </head>
 
@@ -17,7 +17,7 @@
 				<div class="menu">
 					<ul>
 						<div class="logo-img">
-							<a href="index.html"><img src="popcorn-logo.png" alt="" srcset="" id="logo"></a>
+							<a href="index.html"><img src="assets/images/popcorn-logo.png" alt="" srcset="" id="logo"></a>
 						</div>
 						<a href="filmes.html"><li>Filmes</li></a>
 						<a href="series.html"><li>Séries</li></a>
@@ -25,109 +25,117 @@
 					</ul>
 				</div>
 				<div class="menu-search-user">
-					<a href=""><img src="magnifying-glass.png" alt=""></a>
-				<a href=""><img src="profile-user.png" alt="">User</a>
+					<a href=""><img src="assets/images/search.png" alt="" width="28px"></a>
+				<a href=""><img src="assets/images/profile-user.png" alt="" width="28px"></a>
 				</div>
 			</nav>
 		</header>
+		<video autoplay muted loop id="video-background">
+			<source src="assets/videos/got-video.mov" type="video/mp4" style="transform: rotate(90deg);">
+		  </video>
 		<div class="slogan-capa">
 			<p>SERIES</p>
 			<p class="rating">Classificação: <strong> 9,2/10 </strong> &#x2B50;</p>
 		<h1>GAME OF THRONES</h1>
 		<p style="margin-bottom: 4vh;">When you play the game of thrones, you win or you die.</p>
-		<a href="" class="save-btn"> Adicionar à lista <img src="save-instagram.png" alt="" srcset=""> </a>
-		<p style="margin-top: 3vh; color: lightskyblue;">10 Temporadas</p>
+		<a href="" class="save-btn"> Adicionar à lista <img src="assets/images/save-instagram.png" alt="" srcset=""> </a>
+		<p style="margin-top: 3vh; color: lightskyblue;">8 Temporadas</p>
+		<div class="play-btn"> <a href=""><img src="assets/images/play.png"> </a> </div>
 	</div>
 	</div>
 
 		<main>
-			<section class="series-top10">
+			<div class="container">
+			<section class="series-top10 carousel">
 				<h2>Top 10 - Séries</h2>
-				<ul class="filmes">
+				<ul class="filmes carousel-container">
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/a/a4/Game_of_Thrones_Temporada_1_Poster.jpg" alt="" srcset="">
+						<img src="assets/images/series/got.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://infinitasvidas.files.wordpress.com/2018/10/poster-sherlock.png?w=640" alt="" srcset="">
+						<img src="assets/images/series/sherlock.png" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/thumb/6/6a/Euphoria-1.jpg/220px-Euphoria-1.jpg" alt="" srcset="">
+						<img src="assets/images/series/euphoria.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg" alt="" srcset="">
+						<img src="assets/images/series/peaky.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/7/71/Brooklyn_Nine-Nine-5.jpg" alt="" srcset="">
+						<img src="assets/images/series/broklyn.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c9/Demolidor_-_Primeira_Temporada.jpg/230px-Demolidor_-_Primeira_Temporada.jpg" alt="" srcset="">
+						<img src="assets/images/series/demolidor.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/d/d3/Supernatural_temporada_10_Poster.png" alt="" srcset="">
+						<img src="assets/images/series/supernatural.png" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/9/98/Breaking_bad_3_temporada_poster.jpg" alt="" srcset="">
+						<img src="assets/images/series/breaking.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/en/1/14/The_Boys_Season_2.jpg" alt="" srcset="">
+						<img src="assets/images/series/theboys.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/en/5/58/Office_S5_DVD.JPG" alt="" srcset="">
+						<img src="assets/images/series/office.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>	
 				</ul>
 			</section>
+			<a class="carousel-prev" href="#"></a>
+        <a class="carousel-next" href="#"></a>
+		</div>
 			
 			<section class="filmes-top10">
 				<h2>Top 10 - Filmes</h2>
 				<ul class="filmes">
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/c/c0/Dune_2020.jpeg" alt="" srcset="">
+						<img src="assets/images/filmes/dune.jpeg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/8/8e/Divergent.png" alt="" srcset="">
+						<img src="assets/images/filmes/divergent.png" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/f/fd/Me_Before_You_%28film%29.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/mebeforeyou.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://i0.wp.com/www.gstatic.com/tv/thumb/dvdboxart/163182/p163182_d_v7_aa.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/ponte.jpeg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/b/b7/Watchmen_poster.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/watchman.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Trumanshow.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/truman.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/4/43/Butterflyeffect_poster.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/butterflyeffect.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/a/a0/Hacksaw_Ridge.png" alt="" srcset="">
+						<img src="assets/images/filmes/ateoultimohomem.png" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/3/3a/Interstellar_Filme.png" alt="" srcset="">
+						<img src="assets/images/filmes/interstellar.png" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://static.wikia.nocookie.net/filmes/images/4/45/A-chegada-the-arrival.jpg/revision/latest?cb=20170221185037" alt="" srcset="">
+						<img src="assets/images/filmes/arrival.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>	
 				</ul>
@@ -137,54 +145,54 @@
 				<h2>Filmes Infantis</h2>
 				<ul class="filmes">
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/3/30/WALL-E.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/wall-e.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg" alt=""
+						<img src="assets/images/filmes/up.jpg" alt=""
 							srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://m.media-amazon.com/images/M/MV5BMTgzMDczMDYzNl5BMl5BanBnXkFtZTgwMzk2MDIwMTE@._V1_.jpg"
+						<img src="assets/images/filmes/rio.jpg"
 							alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/ED40249C56D119846038B3B0C5EAEBBFBDBFB0E7BD0E25C86B3BEC6726A52805/scale?width=506&aspectRatio=2.00&format=jpeg"
+						<img src="assets/images/filmes/divertidamente.jpeg"
 							alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8B1D7732B65A4839292E54C7D78EADC6D7F9BAC11382BD9538A7A6FCC8E0A69D/scale?width=506&aspectRatio=2.00&format=jpeg"
+						<img src="assets/images/filmes/zootopia.jpeg"
 							alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://lumiere-a.akamaihd.net/v1/images/lion_king_the_2019_la_ih_ptb_1000_x_1440_2baad78d.jpeg?region=0%2C0%2C1000%2C1440"
+						<img src="assets/images/filmes/reileao.jpeg"
 							alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://upload.wikimedia.org/wikipedia/pt/e/e5/Frozen_2013.png" alt="" srcset="">
+						<img src="assets/images/filmes/frozen.png" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://br.web.img3.acsta.net/pictures/16/09/12/22/13/415370.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/moana.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/89/83/20028679.jpg" alt=""
+						<img src="assets/images/filmes/minions.jpg" alt=""
 							srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://m.media-amazon.com/images/M/MV5BMDliOTIzNmUtOTllOC00NDU3LWFiNjYtMGM0NDc1YTMxNjYxXkEyXkFqcGdeQXVyNTM3NzExMDQ@._V1_.jpg"
+						<img src="assets/images/filmes/bighero.jpg"
 							alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 					<li class="filme">
-						<img src="https://m.media-amazon.com/images/I/61KcmrlBKqL.jpg" alt="" srcset="">
+						<img src="assets/images/filmes/nemo.jpg" alt="" srcset="">
 						<p class="movie-title">Título do Filme</p>
 					</li>
 				</ul>
